@@ -37,7 +37,8 @@
                 <x-jet-section-border />
 
                 <div class="mt-10 sm:mt-0">
-                    @livewire('profile.delete-user-form')
+                    profile delete user
+                    <!-- @livewire('profile.delete-user-form') -->
                 </div>
             @endif
         </div>
