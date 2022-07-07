@@ -9,12 +9,20 @@
         <script>
             // AJAX DataTable
             var datatable = $('#crudTable').DataTable({
+                processing: true,
+                serverSide: true,
                 ajax: {
                     url: '{!! url()->current() !!}',
                 },
-                columns: [
-                    { data: 'id', name: 'id', width: '5%'},
-                    { data: 'name', name: 'name' },
+                columns: [{
+                        data: 'id',
+                        name: 'id',
+                        width: '5%'
+                    },
+                    {
+                        data: 'name',
+                        name: 'name'
+                    },
                     {
                         data: 'action',
                         name: 'action',
@@ -38,11 +46,11 @@
                 <div class="px-4 py-5 bg-white sm:p-6">
                     <table id="crudTable">
                         <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Nama</th>
-                            <th>Aksi</th>
-                        </tr>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nama</th>
+                                <th>Aksi</th>
+                            </tr>
                         </thead>
                         <tbody></tbody>
                     </table>
