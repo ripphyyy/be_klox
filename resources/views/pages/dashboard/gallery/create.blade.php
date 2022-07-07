@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            Product &raquo; {{ $product->name }} &raquo; Gallery &raquo; Upload Photos
+            Product Gallery &raquo; {{ $product->name }} &raquo; Gallery &raquo; Upload Photos
         </h2>
     </x-slot>
 
